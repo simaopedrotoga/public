@@ -1,2 +1,2 @@
 # public
-Pubic materials for FPRO lectures and practial work
+Public materials for FPRO lectures and practical work
