@@ -45,6 +45,6 @@ alex.left(90)
 alex.forward(50)
 alex.left(90) 
 
-window.exitonclick()       # wait for a user click on the canvas
+window.mainloop()
 turtle.bye()
 
