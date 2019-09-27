@@ -19,7 +19,7 @@ Created on Mon Oct  1 10:32:50 2018
 #    pass    # so this is always executed, but it does nothing
 #elif True:
 #    pass   # And this is never executed
-## but there's else block
+## but there's an else block
 
 age = 17
 

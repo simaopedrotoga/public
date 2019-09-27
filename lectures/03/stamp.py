@@ -28,5 +28,5 @@ for size in range(5, 60, 2):    # start with size = 5 and grow by 2
     tess.forward(size)          # move tess along
     tess.right(24)              # and turn her
 
-wn.exitonclick()
-#turtle.bye()
+wn.mainloop()
+turtle.bye()

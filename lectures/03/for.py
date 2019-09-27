@@ -57,31 +57,33 @@ How to Think Like a Computer Scientist — Learning with Python 3, 2012
 # Another example with turtles
 ############
 
-#import turtle           # set up alex
+#import turtle             # set up alex
 #
 #wn = turtle.Screen()
+#wn.bgcolor("lightgreen")  # Set the window background color
 #alex = turtle.Turtle()
 #
 #colors = ["yellow", "red", "purple", "blue"]
-#for color in colors:                          # for each color
+#for color in colors:      # for each color
 #    alex.color(color)
 #    alex.forward(50)
-#   alex.left(90)
+#    alex.left(90)
 
 ############
 # An example with range
 ############
 
-#import turtle           # set up alex
+#import turtle             # set up alex
 #
 #wn = turtle.Screen()
+#wn.bgcolor("lightgreen")  # Set the window background color
 #alex = turtle.Turtle()
 #
-#for i in range(4):      # repeat four times
+#for i in range(4):        # repeat four times
 #    alex.forward(50)
 #    alex.left(90)
 #
-#wn.exitonclick()        # wait for a user click on the canvas
+#wn.mainloop()
 #turtle.bye()
 
 ############
