@@ -32,7 +32,7 @@ tess.pensize(5)
 alex = turtle.Turtle()     # Create alex and set some attributes
 alex.color("Navy")
 
-tess.forward(160)           # Make tess draw equilateral triangle
+tess.forward(160)          # Make tess draw equilateral triangle
 tess.left(120)
 tess.forward(160)
 tess.left(120)
@@ -40,9 +40,9 @@ tess.forward(160)
 tess.left(120)             # Complete the triangle
 
 tess.right(180)            # Turn tess around
-tess.forward(160)           # Move her away from the origin
+tess.forward(160)          # Move her away from the origin
 
-alex.forward(100)           # Make alex draw a square
+alex.forward(100)          # Make alex draw a square
 alex.left(90)
 alex.forward(100)
 alex.left(90)
