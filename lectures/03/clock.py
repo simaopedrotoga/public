@@ -21,5 +21,5 @@ for _ in range(12):
     cyril.backward(105)  # almost all the way back (5 units offset to center clock on turtle center, otherwise will center on upper left corner)
     cyril.left(30)
 
-wn.exitonclick()
+wn.mainloop()
 turtle.bye()
