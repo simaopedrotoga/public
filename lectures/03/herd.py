@@ -21,10 +21,11 @@ window.bgcolor("lightgreen")
 window.title("Tess & Alex")
 
 tess = turtle.Turtle()     # Create tess and set some attributes
-tess.color("hotpink")
+tess.color("Pink")
 tess.pensize(5)
 
-alex = turtle.Turtle()     # Create alex
+alex = turtle.Turtle()     # Create alex and set some attributes
+alex.clor("Navy")
 
 tess.forward(80)           # Make tess draw equilateral triangle
 tess.left(120)
