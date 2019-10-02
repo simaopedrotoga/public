@@ -23,8 +23,8 @@ def is_in_screen(w, t):
     top_bound = w.window_height() / 2
     bottom_bound = -w.window_height() / 2
 
-    turtle_x = t.xcor()  # get current x position
-    turtle_y = t.ycor()  # get current y position
+    turtle_x = t.xcor()      # get current x position
+    turtle_y = t.ycor()      # get current y position
 
     still_in = True
     if turtle_x > right_bound or turtle_x < left_bound:
@@ -36,7 +36,7 @@ def is_in_screen(w, t):
 
 
 wn = turtle.Screen()
-wn.setup(600, 600)     # size of the screen window
+wn.setup(600, 600)       # size of the screen window
 wn.bgcolor("green")
 
 tess = turtle.Turtle()
