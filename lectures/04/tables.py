@@ -25,6 +25,6 @@ for x in range(11):          # generate values for columns
 
 ##### multiples of 2, all on one line
 
-#for i in range(1, 7):
-#    print(2 * i, end="  ")
-#print("\nto be continued...")
+for i in range(1, 7):
+    print(2 * i, end="  ")
+print("\nto be continued...")
