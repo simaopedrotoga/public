@@ -14,11 +14,10 @@ How to Think Like a Computer Scientist — Learning with Python 3, 2012
 # for loop
 ############
 
-#print()
-#for friend in ["Joe", "Zoe", "Zuki", "Thandi", "Paris"]:
-#    invite = "Hi " + friend + ". Please come to my party!"
-#    print(invite)
-## more code to follow
+print()
+for friend in ["Joe", "Zoe", "Zuki", "Thandi", "Paris"]:
+    invite = "Hi " + friend + ". Please come to my party!"
+    print(invite)
 
 ############
 # An example with turtles
@@ -33,7 +32,7 @@ How to Think Like a Computer Scientist — Learning with Python 3, 2012
 #    alex.forward(50)
 #    alex.left(90)
 #
-#wn.exitonclick()        # wait for a user click on the canvas
+#wn.mainloop()
 #turtle.bye()
 
 ############
@@ -50,8 +49,8 @@ How to Think Like a Computer Scientist — Learning with Python 3, 2012
 #    alex.forward(50)
 #    alex.left(90)
 #
-#wn.exitonclick()
-#turtle.bye()
+wn.mainloop()
+turtle.bye()
 
 ############
 # Another example with turtles

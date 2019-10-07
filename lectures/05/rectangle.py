@@ -49,5 +49,5 @@ move_n_draw(tess, 0, -100)
 move_n_draw(tess, 0, 100)
 move_n_draw(tess, -100, 0)
 
-wn.exitonclick()
-turtle.done()                    # needed in my SPyder
+wn.mainloop()
+turtle.done() 

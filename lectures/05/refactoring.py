@@ -50,5 +50,5 @@ dave.forward(2 * length)
 dave.pendown()
 dave.forward(length)
 
-wn.exitonclick()
+wn.mainloop()
 turtle.done()

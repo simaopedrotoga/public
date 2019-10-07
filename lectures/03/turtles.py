@@ -25,7 +25,8 @@ alex.left(90)             # Tell alex to turn by 90 degrees
 alex.forward(30)          # Complete the second side of a rectangle
 
 window.mainloop()         # Wait for user to close window
-#window.exitonclick()      # wait for a user click on the canvas
+turtle.bye()
+
 turtle.bye()
 
 ############
@@ -48,6 +49,5 @@ turtle.bye()
 #tess.forward(50)
 #
 #window.mainloop()       # Wait for user to close window
-##window.exitonclick()    # wait for a user click on the canvas
 #turtle.bye()
 

@@ -34,5 +34,6 @@ alex.pendown()
 
 draw_square(alex, 75)        # Draw another square
 
-wn.exitonclick()
-turtle.bye()                # needed in my SPyder
+wn.mainloop()
+turtle.bye()
+
