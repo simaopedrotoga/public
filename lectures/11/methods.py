@@ -14,7 +14,7 @@ english_spanish = {"one": "uno", "two": "dos", "three": "tres"}
 
 #### use kyes()
 for key in english_spanish.keys():
-    # The order of the k's is not defined
+    # The order of the k's is the order of insertion as of python 3.7
     print("Got key", key, "which maps to value", english_spanish[key])
 
 print()
