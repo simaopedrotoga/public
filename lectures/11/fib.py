@@ -8,18 +8,20 @@ Created on Wed Nov 14 16:19:53 2018
 # This is a particularly inefficient algorithm, and this could be solved
 # far more efficient iteratively or using memoisation
 
+
 def fib(n):
     if n <= 1:
         return n
     t = fib(n-1) + fib(n-2)
     return t
 
-print("Starting...")
+
+print("\nStarting...")
 print(fib(36))
 
 # using memoisation
-
 alreadyknown = {0: 0, 1: 1}
+
 
 def fib(n):
     if n not in alreadyknown:
@@ -27,6 +29,6 @@ def fib(n):
         alreadyknown[n] = new_value
     return alreadyknown[n]
 
-print("Starting...")
-print(fib(360))   # that's 10x
 
+print("\nStarting...")
+print(fib(720))   # that's 20x
