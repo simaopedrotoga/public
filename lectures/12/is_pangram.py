@@ -10,9 +10,14 @@ Adapted from: https://www.geeksforgeeks.org/python-sets/
 
 from string import ascii_lowercase as asc_lower
 
+print(len(asc_lower), asc_lower)
+print()
 
-# function to check if all elements are present or not
+
 def is_pangram(s):
+    """
+    Function to check if all elements are present or not
+    """
     return set(asc_lower) - set(s.lower()) == set([])
 
 

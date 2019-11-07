@@ -16,6 +16,8 @@ B = {3, 2, 3, 1}
 print(A == B)  # True
 print(B)       # {1, 2, 3}
 
+print(id(A) == id(B))  # False
+
 A = set([1, 2, 3])
 B = set([3, 2, 3, 1])
 

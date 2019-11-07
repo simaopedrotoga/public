@@ -5,10 +5,10 @@ Created on Tue Nov  5 16:30:41 2019
 
 @author: jlopes
 
+Python program to find the missing and additional elements
+
 Adapted from: https://www.geeksforgeeks.org/python-sets/
 """
-
-# Python program to find the missing and additional elements
 
 # examples of lists
 list1 = [1, 2, 3, 4, 5, 6]

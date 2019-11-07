@@ -20,7 +20,7 @@ population[cities2] = 30000000
 print(population)
 
 total = 0
-for pop in population:
-    total += population[pop]
+for p in population:
+    total += population[p]
 
 print("\nTotal =", total)
