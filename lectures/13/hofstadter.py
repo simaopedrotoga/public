@@ -10,29 +10,30 @@ Python program to implement Hofstader Sequence using mutual recursion
 https://www.geeksforgeeks.org/mutual-recursion-example-hofstadter-female-male-sequences/
 """
 
-# Female function
-def hofstaderFemale(n):
-    if n < 0:
-        return
-    else:
-        val = 1 if n == 0 else (n - hofstaderFemale(n - 1))
-        return val
 
-# Male function
-def hofstaderMale(n):
+# female function
+def h_female(n):
     if n < 0:
         return
     else:
-        val = 0 if n == 0 else (n - hofstaderMale(n - 1))
-        return val
+        return 1 if n == 0 else (n - h_male(h_female(n-1)))
+
+
+# male function
+def h_male(n):
+    if n < 0:
+        return
+    else:
+        return 0 if n == 0 else (n - h_female(h_male(n-1)))
+
 
 # Driver code
 print()
-print("F:", end = " ")
-for i in range(0, 20):
-    print(hofstaderFemale(i), end = " ")
+print("F:", end=" ")
+for i in range(21):
+    print(h_female(i), end=" ")
 print()
-print("M:", end = " ")
-for i in range(0, 20):
-    print(hofstaderMale(i), end = " ")
+print("M:", end=" ")
+for i in range(21):
+    print(h_male(i), end=" ")
 print()

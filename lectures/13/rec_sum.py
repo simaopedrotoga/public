@@ -13,7 +13,7 @@ def recursive_sum(nested_number_list):
     """
     Returns the total sum of all elements in nested_number_list
     """
-    print("called with:", nested_number_list)
+    print("called with: ", nested_number_list)
     total = 0
     for element in nested_number_list:
         if type(element) is list:
@@ -25,3 +25,5 @@ def recursive_sum(nested_number_list):
 
 print()
 print(recursive_sum([1, 2, [11, 13], 8]))
+print()
+print(recursive_sum([]))
