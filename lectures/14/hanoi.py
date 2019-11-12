@@ -11,14 +11,14 @@ Adapted from:
     https://www.geeksforgeeks.org/c-program-for-tower-of-hanoi/
 """
 
-def moveTower(height, fromPole, toPole, withPole):
+def move_tower(height, from_pole, to_pole, with_pole):
     if height >= 1:
         # move n-1 disks from source to auxiliary, so they are out of the wa
-        moveTower(height-1, fromPole, withPole, toPole)
+        move_tower(height-1, from_pole, with_pole, to_pole)
         # move the nth disk from source to target
-        moveDisk(height, fromPole, toPole)
+        moveDisk(height, from_pole, to_pole)
         # move the n-1 disks that we left on auxiliary onto target
-        moveTower(height-1, withPole, toPole, fromPole)
+        move_tower(height-1, with_pole, to_pole, from_pole)
 
 # Display our progress
 def moveDisk(n, fp, tp):
@@ -26,4 +26,4 @@ def moveDisk(n, fp, tp):
 
 print()
 # initiate call from source A to target C with auxiliary B
-moveTower(4, "A", "C", "B")
+move_tower(4, "A", "C", "B")

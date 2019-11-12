@@ -19,6 +19,6 @@ def to_base(n, base):
 
 print()
 n = 2018
-basis = [16, 10, 8, 2]
+basis = [16, 10, 8, 4, 2]  # hex, _, byte, nibble, bit
 for b in basis:
-    print(n, "to base", b, "-", to_base(n, b))
+    print("{0}, to base {1} is {2}".format(n, b, to_base(n, b)))

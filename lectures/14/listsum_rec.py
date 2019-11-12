@@ -18,4 +18,4 @@ def listsum(num_list):
 
 print()
 print(listsum([1, 3, 5, 7, 9]))
-print(listsum([]))
+#print(listsum([]))
