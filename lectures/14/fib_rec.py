@@ -7,17 +7,17 @@ Created on Tue Nov 27 21:55:15 2018
 """
 
 
-def fib_recur(n):
+def fib_rec(n):
     """ assumes n an int >= 0 """
     if n == 0:
         return 0
     elif n == 1:
         return 1
     else:
-        return fib_recur(n-1) + fib_recur(n-2)
+        return fib_rec(n-1) + fib_rec(n-2)
 
 
 print()
-print(fib_recur(7))
-print(fib_recur(35))
+print(fib_rec(7))
+print(fib_rec(35))
 # Worst case O(2^n)
