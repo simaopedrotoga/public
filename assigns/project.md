@@ -13,7 +13,7 @@
 
 1) Link para o repositório do GitHub: \<https://github.com/fpro-feup/public\>
 
-2) Adicionar os profs da Unidade:
+2) Adicionar o prof. da Unidade (ver lista em baixo) e o "Lord of the Game" (aka Ricardo Cruz):
 
 - https://github.com/fernandocassola
 - https://github.com/rpmcruz
