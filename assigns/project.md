@@ -1,6 +1,6 @@
 # Projeto \<nome\>
 ### FPRO/MIEIC, 2019/20
-### \<Fulano de Tal up2019xxxxx@fe.up.pt\>
+### \<Fulano de Tal (up2019xxxxx@fe.up.pt)\>
 ### \<1MIEIC0X\> 
 
 #### Objetivo
@@ -11,7 +11,7 @@
 
 #### Repositório de código
 
-1) Link para o repositório do GitHub: \<https://github.com/fpro-feup/public\>
+1) Link para o repositório do GitHub: <https://github.com/fpro-feup/public>
 
 2) Adicionar o prof. da Unidade (ver lista em baixo) e o "Lord of the Game" (aka Ricardo Cruz):
 
