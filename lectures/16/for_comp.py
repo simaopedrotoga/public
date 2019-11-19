@@ -18,9 +18,9 @@ Created on Sun Dec  2 23:44:47 2018
 #print(odd)
 
 # create a dictionary
-#dict= {k: v for k, v in zip(['a', 'b', 'c'], [1, 2, 3])}
-#print()
-#print(dict)
+dict= {k: v for k, v in zip(['a', 'b', 'c'], [1, 2, 3])}
+print()
+print(dict)
 
 # semantics example
 #string = "Hello 12345 World"
