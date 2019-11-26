@@ -9,7 +9,7 @@ David Mertz, Functional Programming in Python
 """
 
 def quicksort(lst):
-    "Quicksort over a list-like sequence"
+    """Quicksort over a list-like sequence."""
     #print(lst)
     if len(lst) == 0:
         return lst

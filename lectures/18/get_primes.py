@@ -9,7 +9,7 @@ David Mertz, Functional Programming in Python
 """
 
 def get_primes():
-    "Simple lazy Sieve of Eratosthenes"
+    """Simple lazy Sieve of Eratosthenes."""
     candidate = 2
     found = []
     while True:

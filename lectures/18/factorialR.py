@@ -7,7 +7,7 @@ Created on Wed Dec  5 09:36:12 2018
 """
 
 def factorialR(N):
-    "Recursive factorial function"
+    """Recursive factorial function"""
     assert isinstance(N, int) and N >= 1
     return 1 if N <= 1 else N * factorialR(N-1)
 

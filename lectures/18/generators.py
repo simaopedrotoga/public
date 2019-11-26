@@ -30,7 +30,7 @@ dict_comp = {x: chr(65+x) for x in range(1, 11)}
 #print(dict_comp)
 #print(type(dict_comp))
 
-# and iterable and an iterator
+# an iterable and an iterator
 simple_list = [1, 2, 3]
 my_iterator = iter(simple_list)
 #print()
@@ -38,7 +38,7 @@ my_iterator = iter(simple_list)
 #print(next(my_iterator))
 #print(next(my_iterator))
 
-# generator comprehension
+# generator expressions
 gen_exp = (x ** 2 for x in range(10) if x % 2 == 0)
 #print()
 #print(gen_exp)
