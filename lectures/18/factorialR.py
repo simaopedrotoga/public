@@ -6,10 +6,10 @@ Created on Wed Dec  5 09:36:12 2018
 @author: jlopes
 """
 
-def factorialR(N):
-    """Recursive factorial function"""
-    assert isinstance(N, int) and N >= 1
-    return 1 if N <= 1 else N * factorialR(N-1)
+def factorialR(n):
+    """Recursive factorial function with a assert."""
+    assert isinstance(n, int) and n >= 1
+    return 1 if n <= 1 else n * factorialR(n-1)
 
 print()
 print(factorialR(5))
