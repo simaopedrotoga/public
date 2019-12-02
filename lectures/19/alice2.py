@@ -9,8 +9,6 @@ Peter Wentworth, Jeffrey Elkner, Allen B. Downey, and Chris Meyers,
 How to Think Like a Computer Scientist — Learning with Python 3 (RLE), 2012
 """
 
-import time
-
 
 # utility function
 def load_from_file(filename):

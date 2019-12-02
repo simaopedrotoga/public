@@ -12,11 +12,11 @@ How to Think Like a Computer Scientist — Learning with Python 3 (RLE), 2012
 
 def search_binary(xs, target):
     """ Find and return the index of key in sequence xs """
-    lb = 0
-    ub = len(xs)
+    lb = 0        # lower bound
+    ub = len(xs)  # upper bound
     while True:
         if lb == ub:   # If region of interest (ROI) becomes empty
-           return -1
+           return -1   # NOT found!
 
         # Next probe should be in the middle of the ROI
         mid_index = (lb + ub) // 2
@@ -24,6 +24,7 @@ def search_binary(xs, target):
         # Fetch the item at that position
         item_at_mid = xs[mid_index]
 
+        # comment next if not debugging
         print("ROI[{0}:{1}](size={2}), probed='{3}', target='{4}'"
               .format(lb, ub, ub-lb, item_at_mid, target))
 

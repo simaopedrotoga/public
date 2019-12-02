@@ -12,8 +12,8 @@ How to Think Like a Computer Scientist — Learning with Python 3 (RLE), 2012
 def merge(xs, ys):
     """ Merge sorted lists xs and ys. Return a sorted result """
     result = []
-    xi = 0
-    yi = 0
+    xi = 0   # i-th element of xs
+    yi = 0   # i-th element of ys
 
     while True:
         if xi >= len(xs):           # If xs list is finished,

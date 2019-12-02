@@ -21,7 +21,7 @@ def load_from_file(filename):
     return file_content
 
 
-# Linear Search (see other elsewhere)
+# Linear Search
 def search_linear(xs, target):
     """ Find and return the index of target in sequence xs """
     for (i, v) in enumerate(xs):
@@ -30,7 +30,7 @@ def search_linear(xs, target):
     return -1
 
 
-# Binary Search (see other elsewhere)
+# Binary Search
 def search_binary(xs, target):
     """ Find and return the index of key in sequence xs """
     lb = 0
@@ -60,18 +60,22 @@ def search_binary(xs, target):
 # The basic strategy is to run through each of the words in the book,
 # look it up in the vocabulary, and if it is not in the vocabulary,
 # save it into a new resulting list which we return from the function
-def find_unknown_words(vocab, wds):
+def find_unknown_words_l(vocab, wds):
     """ Return a list of words in wds that do not occur in vocab """
     result = []
     for w in wds:
-        if BINARY:
-            if (search_binary(vocab, w) < 0):  # binary search
-                result.append(w)
-        else:
-            if (search_linear(vocab, w) < 0):  # linear search
-                result.append(w)
+        if (search_linear(vocab, w) < 0):  # linear search
+            result.append(w)
     return result
 
+# more efficient
+def find_unknown_words_b(vocab, wds):
+    """ Return a list of words in wds that do not occur in vocab """
+    result = []
+    for w in wds:
+        if (search_binary(vocab, w) < 0):  # binary search
+            result.append(w)
+    return result
 
 # split vocabulary in words
 def load_words_from_file(filename):
@@ -121,16 +125,14 @@ print()
 print("There are {0} words in the book.\nThe first 24 are\n{1}"
       .format(len(book_words), book_words[:24]))
 
-BINARY = False
-BINARY = True
 
 # let us make some timing measurements
 print()
-print("Finding missing words...")
+print("Finding missing words...", end='')
 t0 = time.clock()
-missing_words = find_unknown_words(bigger_vocab, book_words)
+#missing_words = find_unknown_words_l(bigger_vocab, book_words)
+missing_words = find_unknown_words_b(bigger_vocab, book_words)
 t1 = time.clock()
-print()
+print(" took {0:.4f} seconds.".format(t1-t0))
 print("There are {0} unknown words.".format(len(missing_words)))
-print("That took {0:.4f} seconds.".format(t1-t0))
 #print(missing_words)

@@ -13,8 +13,7 @@ How to Think Like a Computer Scientist — Learning with Python 3 (RLE), 2012
 # item that was inserted into the result, and avoid inserting it again
 def remove_adjacent_dups(xs):
     """ Return a new list in which all adjacent duplicates from xs
-        have been removed.
-    """
+        have been removed. """
     result = []
     most_recent_elem = None
     for e in xs:
