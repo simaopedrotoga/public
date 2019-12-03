@@ -68,7 +68,8 @@ def find_unknown_words_l(vocab, wds):
             result.append(w)
     return result
 
-# more efficient
+
+# orelse use binary_search (more efficient)
 def find_unknown_words_b(vocab, wds):
     """ Return a list of words in wds that do not occur in vocab """
     result = []
@@ -76,6 +77,7 @@ def find_unknown_words_b(vocab, wds):
         if (search_binary(vocab, w) < 0):  # binary search
             result.append(w)
     return result
+
 
 # split vocabulary in words
 def load_words_from_file(filename):
@@ -88,8 +90,8 @@ def load_words_from_file(filename):
 # now read a sensible size vocabulary
 bigger_vocab = load_words_from_file("vocab.txt")
 print()
-print("There are {0} words in the vocabulary.\nStarting with\n{1} "
-      .format(len(bigger_vocab), bigger_vocab[:6]))
+print("There are {0} words in the vocabulary.\nStarting with:\n{1} "
+      .format(len(bigger_vocab), bigger_vocab[:12]))
 
 
 # Books are full of punctuation, and have mixtures of lowercase and uppercase
@@ -111,7 +113,7 @@ def text_to_words(the_text):
     return wds
 
 
-# clean book
+# clean a book
 def get_words_in_book(filename):
     """ Read a book from filename, and return a list of its words. """
     file_content = load_from_file(filename)
@@ -122,17 +124,18 @@ def get_words_in_book(filename):
 # Now we're ready to read in our book
 book_words = get_words_in_book("AliceInWonderland.txt")
 print()
-print("There are {0} words in the book.\nThe first 24 are\n{1}"
-      .format(len(book_words), book_words[:24]))
+print("There are {0} words in the book.\nStarting with:\n{1}"
+      .format(len(book_words), book_words[:12]))
 
 
 # let us make some timing measurements
 print()
 print("Finding missing words...", end='')
 t0 = time.clock()
-#missing_words = find_unknown_words_l(bigger_vocab, book_words)
-missing_words = find_unknown_words_b(bigger_vocab, book_words)
+missing_words = find_unknown_words_l(bigger_vocab, book_words)
+#missing_words = find_unknown_words_b(bigger_vocab, book_words)
 t1 = time.clock()
 print(" took {0:.4f} seconds.".format(t1-t0))
-print("There are {0} unknown words.".format(len(missing_words)))
-#print(missing_words)
+print()
+print("There are {0} unknown words.\nStarting with:\n{1}"
+      .format(len(missing_words), missing_words[:12]))

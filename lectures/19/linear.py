@@ -40,12 +40,12 @@ def search_linear(xs, target):
 #    return -1
 
 
-def search_linear(xs, target):
-    """ Find and return the index of target in sequence xs """
-    for (i, v) in enumerate(xs):
-        if v == target:
-            return i
-    return -1
+#def search_linear(xs, target):
+#    """ Find and return the index of target in sequence xs """
+#    for (i, v) in enumerate(xs):
+#        if v == target:
+#            return i
+#    return -1
 
 
 ls = [2, 3, 5, 7, 11, 13, 17, 23, 29, 31, 37, 43, 47, 53]

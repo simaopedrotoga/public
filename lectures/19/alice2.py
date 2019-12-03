@@ -22,7 +22,7 @@ def load_from_file(filename):
 # In a sorted list, to remove dups, we simply have to remember the most recent
 # item that was inserted into the result, and avoid inserting it again
 def remove_adjacent_dups(xs):
-    """ Return a new list in which all adjacent duplicates from xs 
+    """ Return a new list in which all adjacent duplicates from xs
         have been removed.
     """
     result = []
@@ -69,4 +69,4 @@ book_words = remove_adjacent_dups(all_words)
 print()
 print("There are {0} words in the book. Only {1} are unique."
       .format(len(all_words), len(book_words)))
-print("The first 12 words are\n{0}".format(book_words[:12]))
+print("The first 12 words are:\n{0}".format(book_words[:12]))

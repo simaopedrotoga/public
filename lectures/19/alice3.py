@@ -31,9 +31,9 @@ def load_words_from_file(filename):
 
 # now read a sensible size vocabulary
 bigger_vocab = load_words_from_file("vocab.txt")
-print()
-print("There are {0} words in the vocab, starting with\n {1} "
-      .format(len(bigger_vocab), bigger_vocab[:6]))
+#print()
+#print("There are {0} words in the vocab, starting with\n {1} "
+#      .format(len(bigger_vocab), bigger_vocab[:6]))
 
 
 # In a sorted list, to remove dups, we simply have to remember the most recent
@@ -111,12 +111,15 @@ def get_words_in_book(filename):
 
 # Now we're ready to read in our book
 all_words = get_words_in_book("AliceInWonderland.txt")
+print()
+print("Finding missing words...", end='')
 t0 = time.clock()
 all_words.sort()
 book_words = remove_adjacent_dups(all_words)
 missing_words = find_unknowns_merge_pattern(bigger_vocab, book_words)
 t1 = time.clock()
+print(" took {0:.4f} seconds.".format(t1-t0))
 print()
 # Even more stunning performance here:
-print("There are {0} unknown words.".format(len(missing_words)))
-print("That took {0:.4f} seconds.".format(t1-t0))
+print("There are {0} unknown words.\nStarting with:\n{1}"
+      .format(len(missing_words), missing_words[:12]))

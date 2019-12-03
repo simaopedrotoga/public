@@ -16,7 +16,7 @@ def search_binary(xs, target):
     ub = len(xs)  # upper bound
     while True:
         if lb == ub:   # If region of interest (ROI) becomes empty
-           return -1   # NOT found!
+            return -1   # NOT found!
 
         # Next probe should be in the middle of the ROI
         mid_index = (lb + ub) // 2
@@ -37,8 +37,11 @@ def search_binary(xs, target):
             ub = mid_index        # Use lower half of ROI next time
 
 
-ls = [2, 3, 5, 7, 11, 13, 17, 23, 29, 31, 37, 43, 47, 53]
+ls = [2, 3, 5, 7, 11, 13, 17, 23, 29, 31, 37, 43, 47]
 print()
-#print(search_binary(ls, 1))
-#print(search_binary(ls, 17))
-print(search_binary(ls, 53))
+print(search_binary(ls, 1))
+print(search_binary(ls, 17))
+print()
+ls = [2, 3, 5, 7, 11, 13, 17, 23, 29, 31, 37, 43, 47, 53]
+print(search_binary(ls, 1))
+print(search_binary(ls, 17))
