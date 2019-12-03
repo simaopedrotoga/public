@@ -113,11 +113,11 @@ def get_words_in_book(filename):
 all_words = get_words_in_book("AliceInWonderland.txt")
 print()
 print("Finding missing words...", end='')
-t0 = time.clock()
+t0 = time.perf_counter()
 all_words.sort()
 book_words = remove_adjacent_dups(all_words)
 missing_words = find_unknowns_merge_pattern(bigger_vocab, book_words)
-t1 = time.clock()
+t1 = time.perf_counter()
 print(" took {0:.4f} seconds.".format(t1-t0))
 print()
 # Even more stunning performance here:

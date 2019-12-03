@@ -4,7 +4,8 @@ Created on Wed Nov 21 21:35:11 2018
 
 @author: jlopes
 
-Time and compare pop() with pop(0).
+Compare pop() with pop(0) in a list.
+
 The list get's bigger by 10^6 each cicle and there's 10^3 executions for 
 each measurement for more accuracy.
 """
@@ -23,15 +24,15 @@ popzero = timeit.Timer("x.pop(0)",
 print("\n{:>9s} {:>9s} {:>10s}".format("len(x)", "pop()", "pop(0)"))
 
 # get those values in miliseconds (10^⁻3)
-for i in range(1000000, 100000001, 1000000):
+for i in range(10**6, 12*10**6+1, 10**6):
 
-    x = list(range(i))  # the list get's bigger
-    pe = popend.timeit(number=1000)   # timeit for 1000 pops
+    x = list(range(i))               # the list get's bigger
+    pe = popend.timeit(number=1000)  # timeit for 1000 pops
 
-    x = list(range(i))  # the list get's bigger
-    pz = popzero.timeit(number=1000)  # timeit for 1000 pops
+    x = list(range(i))               # the list get's bigger
+    pz = popzero.timeit(number=1000) # timeit for 1000 pops
 
-    # ptint the results
+    # print the measurements
     print("{:9d} {:9.5f} {:10.5f}".format(i, pe, pz))
 
 print("The Winter is coming!")

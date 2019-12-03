@@ -131,10 +131,10 @@ print("There are {0} words in the book.\nStarting with:\n{1}"
 # let us make some timing measurements
 print()
 print("Finding missing words...", end='')
-t0 = time.clock()
+t0 = time.perf_counter()
 missing_words = find_unknown_words_l(bigger_vocab, book_words)
 #missing_words = find_unknown_words_b(bigger_vocab, book_words)
-t1 = time.clock()
+t1 = time.perf_counter()
 print(" took {0:.4f} seconds.".format(t1-t0))
 print()
 print("There are {0} unknown words.\nStarting with:\n{1}"
