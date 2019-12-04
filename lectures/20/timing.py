@@ -26,10 +26,10 @@ print("\n{:>9s} {:>9s} {:>10s}".format("len(x)", "pop()", "pop(0)"))
 # get those values in miliseconds (10^⁻3)
 for i in range(10**6, 12*10**6+1, 10**6):
 
-    x = list(range(i))               # the list get's bigger
+    x = list(range(i))               # the list gets bigger
     pe = popend.timeit(number=1000)  # timeit for 1000 pops
 
-    x = list(range(i))               # the list get's bigger
+    x = list(range(i))               # the list gets bigger
     pz = popzero.timeit(number=1000) # timeit for 1000 pops
 
     # print the measurements
