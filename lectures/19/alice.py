@@ -132,8 +132,13 @@ print("There are {0} words in the book.\nStarting with:\n{1}"
 print()
 print("Finding missing words...", end='')
 t0 = time.perf_counter()
+
+# uncomment next for linear search
 missing_words = find_unknown_words_l(bigger_vocab, book_words)
+
+# uncomment next for binary search
 #missing_words = find_unknown_words_b(bigger_vocab, book_words)
+
 t1 = time.perf_counter()
 print(" took {0:.4f} seconds.".format(t1-t0))
 print()
