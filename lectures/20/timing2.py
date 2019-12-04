@@ -19,13 +19,13 @@ print("\n{:>9s} {:>9s} {:>10s}".format("len(x)", "pop()", "pop(0)"))
 for size in range(10**6, 12*10**6+1, 10**6):
 
     # pop()
-    pe_stmt = "x.pop()"                                  # the list gets bigger
-    pe_setup = "x = list(range(" + str(size) + "))"      # the operation
+    pe_stmt = "x.pop()"                                  # the operation
+    pe_setup = "x = list(range(" + str(size) + "))"      # the list gets bigger
     pe = timeit.timeit(pe_stmt, pe_setup, number=10**3)  # timeit for 1000 pops
 
     # pop(0)
-    pz_stmt = "x.pop(0)"                                 # the list gets bigger
-    pz_setup = "x = list(range(" + str(size) + "))"      # the operation
+    pz_stmt = "x.pop(0)"                                 # the operation
+    pz_setup = "x = list(range(" + str(size) + "))"      # the list gets bigger
     pz = timeit.timeit(pz_stmt, pz_setup, number=10**3)  # timeit for 1000 pops
 
     # print the results
