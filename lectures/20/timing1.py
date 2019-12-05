@@ -43,8 +43,9 @@ import timeit
 print("\n{:>6s} {:>8s} {:>8s} {:>8s} {:>9s} "
       .format("Size", "listf", "comp", "append", "concat"))
 
-# using increasing sizes
-for s in range(10**3, 6*10**3+1, 10**3):
+# start by 1 000 and increase by 1 000 in each iteration
+SIZE = 10**3
+for s in range(SIZE, 6*SIZE+1, SIZE):
     # time listf(s)
     t1 = timeit.timeit("listf(s)", "from __main__ import listf, s", number=10**3)
     # time comp(s)

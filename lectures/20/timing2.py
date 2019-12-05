@@ -15,7 +15,7 @@ import timeit
 # print the header
 print("\n{:>9s} {:>9s} {:>10s}".format("len(x)", "pop()", "pop(0)"))
 
-# using increasing sizes
+# start by 1 000 000 and increase by 1 000 000 in each iteration
 for size in range(10**6, 12*10**6+1, 10**6):
 
     # pop()
