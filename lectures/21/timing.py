@@ -17,8 +17,8 @@ def do_my_sum(xs):
         sum += v
     return sum
 
-sz = 10000000  # Lets have 10 million elements in the list
-testdata = range(sz)
+SIZE = 10000000  # Lets have 10 million elements in the list
+testdata = range(SIZE)
 
 print('...', flush=True)
 

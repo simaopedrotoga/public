@@ -9,8 +9,9 @@ import module1
 import module2
 
 print()
-print(module1.question)
-print(module2.question)
-print()
-print(module1.answer)
-print(module2.answer)
+print("Question ", module1.question)
+print("Answer: ", module1.answer)
+
+#print()
+#print("Question ", module2.question)
+#print("Answer: ", module2.answer)

@@ -10,11 +10,11 @@ import random
 # Create a black box object that generates random numbers
 rng = random.Random()
 
-# Return an int, one of 1,2,3,4,5,6
+# Return an int, one of 1, 2, 3, 4, 5, 6
 dice_throw = rng.randrange(1, 7)
 
 print()
-#print(dice_throw)
+print(dice_throw)
 
 # scale the results
 #print(rng.random() * 5.0)
@@ -38,7 +38,7 @@ rng.shuffle(cards)
 
 # deterministic random sequence
 #print()
-drng = random.Random(123)
-print(drng.random())
-drng = random.Random(123000)
-print(drng.random())
+#drng = random.Random(123)
+#print(drng.random())
+#drng = random.Random(123000)
+#print(drng.random())
