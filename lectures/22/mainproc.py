@@ -16,22 +16,22 @@ def drawSquare(t, sz):
         t.forward(sz)
         t.left(90)
 
-### without main()
+# 1. without using main()
 #wn = turtle.Screen()          # Set up the window and its attributes
 #wn.bgcolor("lightgreen")
 #
-#alex = turtle.Turtle()        # create alex
+#alex = turtle.Turtle()        # Create alex
 #drawSquare(alex, 50)          # Call the function to draw the square
 #
-#wn.exitonclick()
+#wn.mainloop()
 #turtle.bye()
 
-### with main()
+# 2. using main()
 #def main():                     # Define the main function
 #    wn = turtle.Screen()        # Set up the window and its attributes
 #    wn.bgcolor("lightgreen")
 #
-#    alex = turtle.Turtle()      # create alex
+#    alex = turtle.Turtle()      # Create alex
 #    drawSquare(alex, 50)        # Call the function to draw the square
 #
 #    wn.exitonclick()

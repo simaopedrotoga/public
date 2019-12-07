@@ -20,9 +20,9 @@ def main():
     anum = int(input("(1) Please enter a number: "))
     print(squareit(anum))
     print(cubeit(anum))
-    
 
-# this source or an import?
+
+# this source or is it an import?
 print("(1)", __name__)
 
 # call main() only if the Python interpreter is running this source file

@@ -5,8 +5,6 @@ Created on Sun Oct 21 19:32:12 2018
 @author: jlopes
 """
 
-import sys
-
 
 def absolute_value(n):   # Buggy version
     """
@@ -14,9 +12,12 @@ def absolute_value(n):   # Buggy version
     """
     if n < 0:
         return -n
-    elif n >= 0:
+    elif n > 0:
+#    elif n >= 0:
         return n
 
+
+import sys
 
 def test(did_pass):
     """
