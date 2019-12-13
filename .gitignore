@@ -13,3 +13,7 @@ __pycache__/
 # Jupyter Notebook
 .ipynb_checkpoints
 */.ipynb_checkpoints/*
+
+#MyPy
+.mypy_cache
+*/.mypy_cache/*
