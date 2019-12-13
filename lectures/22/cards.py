@@ -11,8 +11,10 @@ https://realpython.com/python-type-checking/#example-play-some-cards
 import random
 from typing import List, Tuple
 
-SUITS = "♠ ♡ ♢ ♣".split()
-RANKS = "2 3 4 5 6 7 8 9 10 J Q K A".split()
+# card suits
+SUITS = "♠ ♡ ♢ ♣".split()  # spade, heart, diamond, club
+# card ranks
+RANKS = "2 3 4 5 6 7 8 9 10 J Q K A".split()  # 2-10, Jack, Queen, King, Ace
 
 Card = Tuple[str, str]
 Deck = List[Card]
@@ -39,7 +41,7 @@ def player_order(names, start=None):
     start_idx = names.index(start)
     return names[start_idx:] + names[:start_idx]
 
-def main() -> None:
+def play() -> None:
     """Play a 4-player card game"""
     deck = create_deck(shuffle=True)
     names = "P1 P2 P3 P4".split()
@@ -56,6 +58,6 @@ def main() -> None:
         print()
 
 if __name__ == "__main__":
-    main()
+    play()
 
 # "mypy game.py" gives no warnings!
