@@ -39,7 +39,7 @@ def player_order(names, start=None):
     start_idx = names.index(start)
     return names[start_idx:] + names[:start_idx]
 
-def play() -> None:
+def main() -> None:
     """Play a 4-player card game"""
     deck = create_deck(shuffle=True)
     names = "P1 P2 P3 P4".split()
@@ -56,6 +56,6 @@ def play() -> None:
         print()
 
 if __name__ == "__main__":
-    play()
+    main()
 
 # "mypy game.py" gives no warnings!

@@ -15,6 +15,6 @@ def filter(oldfile, newfile):
                 outfile.write(line)
 
 # process file
-filter("filter.py", "filter.pyx")
+filter("filter.py", "filter.txt")
 
 print("\nDone.")

@@ -11,16 +11,16 @@ import urllib.request
 url = "https://www.ietf.org/rfc/rfc793.txt"
 destination_filename = "rfc793.txt"
 
-# using module urllib
-urllib.request.urlretrieve(url, destination_filename)
+## using module urllib
+#urllib.request.urlretrieve(url, destination_filename)
+#
+#print("\nWritten in", destination_filename)
 
-print("\nWritten in", destination_filename)
-
-# now with requests
-import requests
-
-response = requests.get(url)
-
+## now with requests
+#import requests
+#
+#response = requests.get(url)
+#
 #print()
 #print(response.text)
 

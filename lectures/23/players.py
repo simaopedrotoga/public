@@ -14,7 +14,7 @@ all_lines.sort()
 
 print("Sorted.")
 
-with open("sortedplayers.txt", "w") as output_file:
+with open("sorted_players.txt", "w") as output_file:
     for line in all_lines:
         output_file.write(line)
 

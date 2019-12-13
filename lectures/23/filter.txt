@@ -11,6 +11,6 @@ def filter(oldfile, newfile):
             if not line.startswith('#'):
                 outfile.write(line)
 
-filter("filter.py", "filter.pyx")
+filter("filter.py", "filter.txt")
 
 print("\nDone.")

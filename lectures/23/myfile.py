@@ -16,10 +16,9 @@ with open("test.txt", "w") as myfile:
 
 print("\nDone.\n")
 
-#with open("test.txt", "r") as my_new_handle:
-#    for the_line in my_new_handle:
-#        # Do something with the line we just read.
-#        # Here we just print it.
+#with open("test.txt", "r") as my_handle:
+#    for the_line in my_handle:
+#        # Do something with the line we just read. Here we just print it.
 #        print(the_line, end="")
 
 #f = open("foo.txt", "r")  # FileNotFoundError

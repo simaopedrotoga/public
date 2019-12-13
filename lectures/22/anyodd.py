@@ -22,19 +22,19 @@ print(any_odd([2, 3]))     # False
 print(any_odd([]))         # None
 
 
-#def any_odd(xs):
-#    """
-#    Return True if there is an odd number in xs, a list of integers.
-#    """
-#    for v in xs:
-#        if v % 2 == 1:
-#            return True
-#    return False
-#
-#print()
-#print(any_odd([1, 2, 3]))  # True
-#print(any_odd([2, 3]))     # True
-#print(any_odd([]))         # False
+def any_odd(xs):
+    """
+    Return True if there is an odd number in xs, a list of integers.
+    """
+    for v in xs:
+        if v % 2 == 1:
+            return True
+    return False
+
+print()
+print(any_odd([1, 2, 3]))  # True
+print(any_odd([2, 3]))     # True
+print(any_odd([]))         # False
 #
 #
 #def any_odd(xs):
