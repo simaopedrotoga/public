@@ -5,7 +5,7 @@ Created on Thu Dec  6 22:49:14 2018
 @author: jlopes
 """
 
-with open("players.txt") as f:
+with open("files/players.txt") as f:
     content = f.read()
     
 words = content.split()

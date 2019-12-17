@@ -18,4 +18,4 @@ else:
     print("The square of your number is ", user_input_as_number**2)
 finally:
     # This will be executed whether or not an exception is raised
-    print("Thank you")
+    print("Thank you.")
